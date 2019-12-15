@@ -1,11 +1,13 @@
 testsProductos\WomenSearchTest.class
+testsProductos\LoginTest.class
+pages\LoginPage.class
+testsProductos\SearchItemsTest.class
+helpers\Helpers.class
+pages\IndexPage.class
+CheckListWeb\checkLinksWebPage.class
 commonSteps\CommonSteps.class
 helpers\Waiters.class
-testsProductos\SearchItemsTest.class
 pages\DressPage.class
 pages\WomenPage.class
 pages\TShirtPage.class
 testsProductos\BackAndForwardTest.class
-helpers\Helpers.class
-pages\IndexPage.class
-CheckListWeb\checkLinksWebPage.class

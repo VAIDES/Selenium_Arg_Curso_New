@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="2" name="TestSuite" time="13.496" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="TestSuite" time="10.1" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.5+10-LTS"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.5\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\VERONICA\Documents\GitHub\Selenium_Arg_Curso-master"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\VERONICA\Documents\GitHub\Selenium_Argen_Curso_New"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="AR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\VERONICA\Documents\GitHub\Selenium_Arg_Curso-master"/>
+    <property name="user.dir" value="C:\Users\VERONICA\Documents\GitHub\Selenium_Argen_Curso_New"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="11.0.5+10-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -65,73 +65,22 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="testsProductos.BackAndForwardTest" name="womenForwardAndBack" time="3.3"/>
-  <testcase classname="testsProductos.BackAndForwardTest" name="dressForwardAndBack" time="5.141">
-    <failure message="Expected condition failed: waiting for element to be clickable: By.linkText: Dresses (tried for 5 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Dresses (tried for 5 second(s) with 500 milliseconds interval)
+  <testcase classname="testsProductos.LoginTest" name="womenForwardAndBack" time="10.1">
+    <failure message="Expected condition failed: waiting for element to be clickable: By.linkText: Log in to your customer account (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Log in to your customer account (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at helpers.Waiters.waitForClickable(Waiters.java:19)
-	at pages.IndexPage.clickDressLink(IndexPage.java:36)
-	at testsProductos.BackAndForwardTest.dressForwardAndBack(BackAndForwardTest.java:32)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Dresses&quot;}
+	at pages.IndexPage.clickLoginLink(IndexPage.java:48)
+	at testsProductos.LoginTest.womenForwardAndBack(LoginTest.java:14)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Log in to your customer account&quot;}
   (Session info: chrome=78.0.3904.108)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-989IB8D4&apos;, ip: &apos;172.17.53.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\VERONICA\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: cdd4a99f1231e64ef037205ebc96cc5d
-*** Element info: {Using=link text, value=Dresses}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 41 more
-</failure>
-    <system-out>El test adelante y atras con women resulto: PASARON Los test al final
-Windows 10
-</system-out>
-    <system-err>Starting ChromeDriver 77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}) on port 38748
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1576422181.399][WARNING]: This version of ChromeDriver has not been tested with Chrome version 78.
-[1576422183.413][WARNING]: Timed out connecting to Chrome, retrying...
-dic. 15, 2019 12:03:05 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-[1576422193.361][WARNING]: Timed out connecting to Chrome, retrying...
-</system-err>
-  </testcase>
-  <testcase classname="testsProductos.BackAndForwardTest" name="TShirtForwardAndBack" time="5.055">
-    <failure message="Expected condition failed: waiting for element to be clickable: By.linkText: T-shirts (tried for 5 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: T-shirts (tried for 5 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at helpers.Waiters.waitForClickable(Waiters.java:19)
-	at pages.IndexPage.clickTShirtLink(IndexPage.java:41)
-	at testsProductos.BackAndForwardTest.TShirtForwardAndBack(BackAndForwardTest.java:47)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;T-shirts&quot;}
-  (Session info: chrome=78.0.3904.108)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-989IB8D4&apos;, ip: &apos;172.17.53.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\VERONICA\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0c36fd995c79dbd82efc766622ea1cab
-*** Element info: {Using=link text, value=T-shirts}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\VERONICA\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 11be405561616f6eb48faf4f8c4d6231
+*** Element info: {Using=link text, value=Log in to your customer account}
 	at jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -152,17 +101,18 @@ Session ID: 0c36fd995c79dbd82efc766622ea1cab
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 41 more
 </failure>
-    <system-out>El test adelante y atras con Dress para ver si esta Ok  resulto: FALLARON Los test al final
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5a1c0542
+Antes de la clase...
 Windows 10
 </system-out>
-    <system-err>Starting ChromeDriver 77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}) on port 15530
+    <system-err>Starting ChromeDriver 77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}) on port 6470
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1576422203.492][WARNING]: This version of ChromeDriver has not been tested with Chrome version 78.
-[1576422205.501][WARNING]: Timed out connecting to Chrome, retrying...
-dic. 15, 2019 12:03:27 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+[1576426436.764][WARNING]: This version of ChromeDriver has not been tested with Chrome version 78.
+[1576426438.785][WARNING]: Timed out connecting to Chrome, retrying...
+dic. 15, 2019 1:14:00 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1576422214.999][WARNING]: Timed out connecting to Chrome, retrying...
+[1576426448.749][WARNING]: Timed out connecting to Chrome, retrying...
 </system-err>
   </testcase>
 </testsuite>

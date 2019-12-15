@@ -1,60 +1,23 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 64.472 sec <<< FAILURE!
-dressForwardAndBack(testsProductos.BackAndForwardTest)  Time elapsed: 5.141 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Dresses (tried for 5 second(s) with 500 milliseconds interval)
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 28.85 sec <<< FAILURE!
+womenForwardAndBack(testsProductos.LoginTest)  Time elapsed: 10.1 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Log in to your customer account (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at helpers.Waiters.waitForClickable(Waiters.java:19)
-	at pages.IndexPage.clickDressLink(IndexPage.java:36)
-	at testsProductos.BackAndForwardTest.dressForwardAndBack(BackAndForwardTest.java:32)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Dresses"}
+	at pages.IndexPage.clickLoginLink(IndexPage.java:48)
+	at testsProductos.LoginTest.womenForwardAndBack(LoginTest.java:14)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Log in to your customer account"}
   (Session info: chrome=78.0.3904.108)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-989IB8D4', ip: '172.17.53.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\VERONICA\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: cdd4a99f1231e64ef037205ebc96cc5d
-*** Element info: {Using=link text, value=Dresses}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 41 more
-
-TShirtForwardAndBack(testsProductos.BackAndForwardTest)  Time elapsed: 5.055 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: T-shirts (tried for 5 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at helpers.Waiters.waitForClickable(Waiters.java:19)
-	at pages.IndexPage.clickTShirtLink(IndexPage.java:41)
-	at testsProductos.BackAndForwardTest.TShirtForwardAndBack(BackAndForwardTest.java:47)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"T-shirts"}
-  (Session info: chrome=78.0.3904.108)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-989IB8D4', ip: '172.17.53.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\VERONICA\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0c36fd995c79dbd82efc766622ea1cab
-*** Element info: {Using=link text, value=T-shirts}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\VERONICA\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 11be405561616f6eb48faf4f8c4d6231
+*** Element info: {Using=link text, value=Log in to your customer account}
 	at jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)

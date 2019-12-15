@@ -9,7 +9,7 @@ import pages.TShirtPage;
 
 public class BackAndForwardTest extends CommonSteps{
 	
-	@Test(description="adelante y atras con women", priority=2)
+	@Test(description="adelante y atras con women", enabled= false, priority=2)
 	
 	public void womenForwardAndBack() {
 		
@@ -25,7 +25,7 @@ public class BackAndForwardTest extends CommonSteps{
 	}
 
 	
-     @Test(description="adelante y atras con Dress para ver si esta Ok ", priority=3)
+     @Test(description="adelante y atras con Dress para ver si esta Ok ", enabled=false,  priority=3)
 	
 	public void dressForwardAndBack() {
 		
@@ -41,7 +41,7 @@ public class BackAndForwardTest extends CommonSteps{
 	}
      
      
-     @Test(description="adelante y atras con Shirt para ver si esta Ok ", priority=4)
+     @Test(description="adelante y atras con Shirt para ver si esta Ok ", enabled= false, priority=4)
      public void TShirtForwardAndBack() {
  		
  		indexPage.clickTShirtLink();

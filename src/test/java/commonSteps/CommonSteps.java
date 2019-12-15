@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import helpers.Screenshots;
 import pages.DressPage;
 import pages.IndexPage;
+import pages.LoginPage;
 import pages.TShirtPage;
 import pages.WomenPage;
 
@@ -21,6 +22,7 @@ public class CommonSteps {
 	protected WomenPage womenPage;
 	protected DressPage dressPage;
 	protected TShirtPage tshirtPage;
+	protected LoginPage loginPage;
 	
 	@BeforeClass
 	public void beforeAll() {
